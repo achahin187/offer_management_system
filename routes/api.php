@@ -17,3 +17,5 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+Route::post("select2/customers", "AjaxController@customers")->name("select2.customers");
+Route::post("select2/vechicles", "AjaxController@vechicles")->name("select2.vechicles");

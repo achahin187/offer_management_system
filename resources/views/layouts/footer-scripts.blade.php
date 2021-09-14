@@ -28,6 +28,9 @@
 <script src="{{ URL::asset('assets/js/custom.js') }}"></script>
 
 
+@jquery
+@toastr_js
+@toastr_render
 <script>
     $(document).ready(function() {
         $('#datatable').DataTable();
@@ -35,6 +38,7 @@
 </script>
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
 
 @if (App::getLocale() == 'en')
     <script src="{{ URL::asset('assets/js/bootstrap-datatables/en/jquery.dataTables.min.js') }}"></script>
@@ -43,7 +47,6 @@
     <script src="{{ URL::asset('assets/js/bootstrap-datatables/ar/jquery.dataTables.min.js') }}"></script>
     <script src="{{ URL::asset('assets/js/bootstrap-datatables/ar/dataTables.bootstrap4.min.js') }}"></script>
 @endif
-
 
 
 <script>

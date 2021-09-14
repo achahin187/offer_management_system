@@ -8,7 +8,7 @@
     <meta name="description" content="Webmin - Bootstrap 4 & Angular 5 Admin Dashboard Template" />
     <meta name="author" content="potenzaglobalsolutions.com" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <title>برنامج مورا سوفت لادارة المدارس</title>
+    <title>Login</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" />
@@ -46,7 +46,7 @@
                     <div class="col-lg-4 col-md-6 login-fancy-bg bg"
                         style="background-image: url(images/login-inner-bg.jpg);">
                         <div class="login-fancy">
-                            <h2 class="text-white mb-20">Hello world!</h2>
+                            <h2 class="text-white mb-20">offer M S!</h2>
                             <p class="mb-20 text-white">Create tailor-cut websites with the exclusive multi-purpose
                                 responsive template along with powerful features.</p>
                             <ul class="list-unstyled  pos-bot pb-30">
@@ -57,13 +57,13 @@
                     </div>
                     <div class="col-lg-4 col-md-6 bg-white">
                         <div class="login-fancy pb-40 clearfix">
-                            <h3 class="mb-30">تسجيل الدخول</h3>
+                            <h3 class="mb-30">Login</h3>
 
                             <form method="POST" action="{{ route('login') }}">
                                 @csrf
 
                                 <div class="section-field mb-20">
-                                    <label class="mb-10" for="name">البريدالالكتروني*</label>
+                                    <label class="mb-10" for="name">Email*</label>
                                     <input id="email" type="email"
                                         class="form-control @error('email') is-invalid @enderror" name="email"
                                         value="{{ old('email') }}" required autocomplete="email" autofocus>
@@ -76,7 +76,7 @@
                                 </div>
 
                                 <div class="section-field mb-20">
-                                    <label class="mb-10" for="Password">كلمة المرور * </label>
+                                    <label class="mb-10" for="Password">Password * </label>
                                     <input id="password" type="password"
                                         class="form-control @error('password') is-invalid @enderror" name="password"
                                         required autocomplete="current-password">
@@ -91,11 +91,11 @@
                                 <div class="section-field">
                                     <div class="remember-checkbox mb-30">
                                         <input type="checkbox" class="form-control" name="two" id="two" />
-                                        <label for="two"> تذكرني</label>
-                                        <a href="#" class="float-right">هل نسيت كلمةالمرور ؟</a>
+                                        <label for="two"> remember me</label>
+                                        <a href="#" class="float-right">forget password</a>
                                     </div>
                                 </div>
-                                <button class="button"><span>دخول</span><i class="fa fa-check"></i></button>
+                                <button class="button"><span>login</span><i class="fa fa-check"></i></button>
                             </form>
                         </div>
                     </div>

@@ -34,6 +34,9 @@ header start-->
               @if (App::getLocale() == 'ar')
               {{ LaravelLocalization::getCurrentLocaleName() }}
              <img src="{{ URL::asset('assets/images/flags/EG.png') }}" alt="">
+              @elseif (App::getLocale() == 'tr')
+              {{ LaravelLocalization::getCurrentLocaleName() }}
+              <img width="17px" height="23px" src="{{ URL::asset('assets/images/flags/TR.png') }}" alt="">
               @else
               {{ LaravelLocalization::getCurrentLocaleName() }}
               <img src="{{ URL::asset('assets/images/flags/US.png') }}" alt="">
@@ -59,7 +62,7 @@ header start-->
             </a>
             <div class="dropdown-menu dropdown-menu-right dropdown-big dropdown-notifications">
                 <div class="dropdown-header notifications">
-                    <strong>{{trans('Sidebar_trans.Notifications')}}</strong>
+                    <strong>Notifications</strong>
                     <span class="badge badge-pill badge-warning">05</span>
                 </div>
                 <div class="dropdown-divider"></div>
